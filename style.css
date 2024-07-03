@@ -473,11 +473,13 @@ footer .copyright .pro-links i:hover{
     #menu-close{
         display: initial;
         font-size: 1.6rem;
+        color: #fff;
+        padding: 30px 0 20px 20px;
     }
     nav .navigation ul{
         position: absolute;
         top: 0;
-        right: 0;
+        right: -220px;
         width: 220;
         height: 100vh;
         background: rgba(17, 20, 104, 0.45);
@@ -487,6 +489,10 @@ footer .copyright .pro-links i:hover{
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        transition: 0.3s ease;
+    }
+    nav .navigation ul.active{
+        right: 0;
     }
     nav .navigation ul li{
         padding: 20px 0 20px 40px;
@@ -494,6 +500,34 @@ footer .copyright .pro-links i:hover{
     }
     nav .navigation ul li a{
         color: #fff;
+    }
+    #home{
+        padding-top: 0px;
+    }
+    #home p{
+        width: 50%;
+    }
+    #features{
+        padding: 8vw 4vw 0 4vw;
+    }
+    #course{
+        padding: 8vw 4vw 0 4vw;
+    }
+    #registration{
+        margin-top: 8vw;
+        padding: 6vw 4vw 6vw 4vw;
+    }
+    #registration .reminder .time{
+        display: flex;
+        flex-wrap: wrap
+        margin-top: 40px;
+    }
+    #experts{
+        padding: 8vw 8vw 4vw 8vw;
+        text-align: center;
+    }
+    footer .copyright .pro-links{
+        margin-top: 15px;
     }
     
 }
