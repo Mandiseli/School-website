@@ -82,6 +82,7 @@ nav .navigation ul li a{
     transition: 0.3S ease;
 }
 
+nav .navigation ul li a:active,
 nav .navigation ul li a:hover{
     color: #FDC938;
 }
@@ -480,7 +481,7 @@ footer .copyright .pro-links i:hover{
         position: absolute;
         top: 0;
         right: -220px;
-        width: 220;
+        width: 220px;
         height: 100vh;
         background: rgba(17, 20, 104, 0.45);
         backdrop-filter: blur(4.5px);
@@ -519,7 +520,7 @@ footer .copyright .pro-links i:hover{
     }
     #registration .reminder .time{
         display: flex;
-        flex-wrap: wrap
+        flex-wrap: wrap;
         margin-top: 40px;
     }
     #experts{
@@ -530,4 +531,23 @@ footer .copyright .pro-links i:hover{
         margin-top: 15px;
     }
     
+}
+
+@media (max-width: 475px) {
+    #registration{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #registration .reminder .time{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
